@@ -6,6 +6,7 @@
     <title>Donation Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+   
 </head>
 <body>
     <header class="max-w-screen-lg mx-auto mt-3  pb-9">
@@ -60,9 +61,6 @@
             </div>
           </div>
 
-
-
-
           <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
             <div class="collapse-title text-xl font-medium pb-8">How do you manipulate an element's attributes and styles using the DOM?</div>
             <div class="collapse-content">
@@ -80,6 +78,12 @@
           </div>
 
         </main>
-    <script src="blog.js"></script>
+        <script>
+            //Home button processing
+    document.getElementById('btn-home').addEventListener('click',function(event){
+        event.preventDefault();
+        window.location.href ='index.html';
+    })
+        </script>
 </body>
 </html>
