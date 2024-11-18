@@ -6,9 +6,19 @@
     <title>DONATION</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+#header-part{
+    position: sticky;
+    top: 0px;
+}
+#button-part{
+    position: sticky;
+    top: 50px;
+}
+</style>
 </head>
 <body>
-    <header class="max-w-screen-lg mx-auto mt-3  pb-9">
+    <header id="header-part" class="max-w-screen-lg mx-auto mt-3  pb-9">
         <nav class="flex justify-between">
             <button id="btn-blog" class="btn bg-lime-300 px-5 font-bold">Blog</button>
             <div class="flex items-center">
@@ -25,7 +35,7 @@
 
     <main class="max-w-screen-lg mx-auto">
         <!-- donation & history button -->
-        <div class="flex justify-center pb-6 ">
+        <div id="button-part" class="flex justify-center pb-6 ">
             <button id="btn-donation" class="btn  mr-4 px-5 bg-lime-300">Donation</button>
             <button id="btn-history" class="btn px-5">History</button>
         </div>
@@ -49,8 +59,8 @@
                    <!-- <button id="btn-donate-now1" class="btn bg-lime-300 px-5 w-full font-bold">Donate Now</button> -->
 <!-- Donate now flip card start -->
 <!-- Open the modal using ID.showModal() method -->
-<button id="btn-donate-now1" class="btn bg-lime-300 px-5 w-full font-bold" onclick="my_modal_5.showModal()">Donate Now</button>
-<dialog id="my_modal_5" class="modal modal-middle">
+<button id="btn-donate-now1" class="btn bg-lime-300 px-5 w-full font-bold" onclick="my_modal_6.showModal()">Donate Now</button>
+<dialog id="my_modal_6" class="modal modal-middle">
   <div class="modal-box">
     <h3 class="text-2xl font-bold text-center">Congrates!</h3>
     <img class="mx-auto" src="/resourses/assets/coin.png" alt="">
@@ -73,6 +83,84 @@
             
 
         </section>
+
+<!-- card-2 start --> 
+   <section class="lg:flex justify-between items-center m-9">
+    <!-- card image -->
+ <div class="w-full mr-9">
+     <img src="./resourses/assets/feni.png" alt="">
+ </div>
+ <div class="w-full">
+     <!-- coin part -->
+     <div class="flex mb-3"> <img src="./resourses/assets/coin.png" alt=""><p id="donation-amount2" class="font-bold mr-2">600</p><p class="font-bold">BDT</p></div>
+     <!-- section header part -->
+      <h1 id="donation2-header" class="font-bold mb-2">Donate for Flood Relief in Feni,Bangladesh</h1>
+      <!-- section paragraph part -->
+       <p class="mb-3"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+       <!-- input-field -->
+         <input id="input-amount2" class="w-full h-10 mb-3" type="text" placeholder="Write Donation Amount">
+        <!-- <button id="btn-donate-now1" class="btn bg-lime-300 px-5 w-full font-bold">Donate Now</button> -->
+<!-- Donate now flip card start -->
+<!-- Open the modal using ID.showModal() method -->
+<button id="btn-donate-now2" class="btn bg-lime-300 px-5 w-full font-bold" onclick="my_modal_5.showModal()">Donate Now</button>
+<dialog id="my_modal_5" class="modal modal-middle">
+<div class="modal-box">
+<h3 class="text-2xl font-bold text-center">Congrates!</h3>
+<img class="mx-auto" src="/resourses/assets/coin.png" alt="">
+<p class="py-4 text-center">You Have Donated for Humankind</p>
+<P class="font-bold text-2xl text-center">Successfully</P>
+<div class="modal-action">
+<form method="dialog">
+<!-- if there is a button in form, it will close the modal -->
+<button class="btn">Close</button>
+</form>
+</div>
+</div>
+</dialog>
+<!-- Donate now flip card end -->
+        </div>
+</section>
+<!-- card-2 end -->
+
+
+<!-- card-3 start -->
+   <section class="lg:flex justify-between items-center m-9">
+    <!-- card image -->
+ <div class="w-full mr-9">
+     <img src="./resourses/assets/quota-protest.png" alt="">
+ </div>
+ <div class="w-full">
+     <!-- coin part -->
+     <div class="flex mb-3"> <img src="./resourses/assets/coin.png" alt=""><p id="donation-amount3" class="font-bold mr-2">2400</p><p class="font-bold">BDT</p></div>
+     <!-- section header part -->
+      <h1 id="donation3-header" class="font-bold mb-2">Aid for Injured in the Quota Movement</h1>
+      <!-- section paragraph part -->
+       <p class="mb-3"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+       <!-- input-field -->
+         <input id="input-amount3" class="w-full h-10 mb-3" type="text" placeholder="Write Donation Amount">
+        <!-- <button id="btn-donate-now1" class="btn bg-lime-300 px-5 w-full font-bold">Donate Now</button> -->
+<!-- Donate now flip card start -->
+<!-- Open the modal using ID.showModal() method -->
+<button id="btn-donate-now3" class="btn bg-lime-300 px-5 w-full font-bold" onclick="my_modal_7 .showModal()">Donate Now</button>
+<dialog id="my_modal_7" class="modal modal-middle">
+<div class="modal-box">
+<h3 class="text-2xl font-bold text-center">Congrates!</h3>
+<img class="mx-auto" src="/resourses/assets/coin.png" alt="">
+<p class="py-4 text-center">You Have Donated for Humankind</p>
+<P class="font-bold text-2xl text-center">Successfully</P>
+<div class="modal-action">
+<form method="dialog">
+<!-- if there is a button in form, it will close the modal -->
+<button class="btn">Close</button>
+
+</form>
+</div>
+</div>
+</dialog>
+<!-- Donate now flip card end -->
+        </div>
+</section>
+<!-- card-3 end -->
         </div>
       
         <!-- Transaction section -->
@@ -81,10 +169,6 @@
          </section>
 
     </main>
-
-    <footer>
-
-    </footer>
     <script src="index.js"></script>
 </body>
 </html>

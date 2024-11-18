@@ -44,6 +44,32 @@ const id3=document.getElementById('donation1-header').innerText;
  
 })
 
+// Donate Now-2
+document.getElementById('btn-donate-now2').addEventListener('click',function(){
+    const inputAmount1= getValue('input-amount2');
+    
+    const donationAmount=parseInt(getInnertext('donation-amount2')) ;
+    const mainAmount= parseInt(getInnertext('main-amount')) ;
+    const id1=document.getElementById('main-amount');
+    const id2=document.getElementById('donation-amount2');
+    const id3=document.getElementById('donation2-header').innerText;
+     donateNow(inputAmount1 ,donationAmount, mainAmount,id1,id2,id3);
+     
+    })
+
+    //Donate Now-3
+    document.getElementById('btn-donate-now3').addEventListener('click',function(){
+        const inputAmount1= getValue('input-amount3');
+        
+        const donationAmount=parseInt(getInnertext('donation-amount3')) ;
+        const mainAmount= parseInt(getInnertext('main-amount')) ;
+        const id1=document.getElementById('main-amount');
+        const id2=document.getElementById('donation-amount3');
+        const id3=document.getElementById('donation3-header').innerText;
+         donateNow(inputAmount1 ,donationAmount, mainAmount,id1,id2,id3);
+         
+        })
+
 
 
 //shared function or utilities
