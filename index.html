@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATION</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="max-w-screen-lg mx-auto mt-3  pb-9">
+        <nav class="flex justify-between">
+            <button id="btn-blog" class="btn bg-lime-300 px-5 font-bold">Blog</button>
+            <div class="flex items-center">
+                <img class="size-8 mr-2" src="./resourses/assets/logo.png" alt="">
+                <h2 class="font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="flex items-center">
+                <img  src="./resourses/assets/coin.png" alt="">
+                <h3 id="main-amount" class="font-bold mr-2">5500</h3><p class="font-bold">BDT</p>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-screen-lg mx-auto">
+        <!-- donation & history button -->
+        <div class="flex justify-center pb-6 ">
+            <button id="btn-donation" class="btn  mr-4 px-5 bg-lime-300">Donation</button>
+            <button id="btn-history" class="btn px-5">History</button>
+        </div>
+        <!-- card container -->
+        <div id="card-container">
+             <!-- card section-1 -->
+        <section class="lg:flex justify-between items-center m-9">
+               <!-- card image -->
+            <div class="w-full mr-9">
+                <img src="./resourses/assets/noakhali.png" alt="">
+            </div>
+            <div class="w-full">
+                <!-- coin part -->
+                <div class="flex mb-3"> <img src="./resourses/assets/coin.png" alt=""><p id="donation-amount1" class="font-bold mr-2">100</p><p class="font-bold">BDT</p></div>
+                <!-- section header part -->
+                 <h1 id="donation1-header" class="font-bold mb-2">Donation for Flood at Noakhali, Bangladesh</h1>
+                 <!-- section paragraph part -->
+                  <p class="mb-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <!-- input-field -->
+                    <input id="input-amount1" class="w-full h-10 mb-3" type="text" placeholder="Write Donation Amount">
+                   <!-- <button id="btn-donate-now1" class="btn bg-lime-300 px-5 w-full font-bold">Donate Now</button> -->
+<!-- Donate now flip card start -->
+<!-- Open the modal using ID.showModal() method -->
+<button id="btn-donate-now1" class="btn bg-lime-300 px-5 w-full font-bold" onclick="my_modal_5.showModal()">Donate Now</button>
+<dialog id="my_modal_5" class="modal modal-middle">
+  <div class="modal-box">
+    <h3 class="text-2xl font-bold text-center">Congrates!</h3>
+    <img class="mx-auto" src="/resourses/assets/coin.png" alt="">
+    <p class="py-4 text-center">You Have Donated for Humankind</p>
+    <P class="font-bold text-2xl text-center">Successfully</P>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+        
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+ <!-- Donate now flip card end -->
+
+                   </div>
+            
+
+        </section>
+        </div>
+      
+        <!-- Transaction section -->
+         <section id="history-section" class="hidden px-16">
+            <h1>Transaction History: </h1>
+         </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
